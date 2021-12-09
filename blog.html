@@ -18,7 +18,8 @@
 <body>
     <header id="blogHeader">
         <div class="wrapper">
-            <div id="logodiv"><a id="logo" href="home">Textilee</a></div>
+            <i class="fa fa-bars"></i>
+            <div id="logoDivBlog"><a id="logo" href="home">Textilee</a></div>
             <div id="nav">
                 <nav>
                     <ul class="headerNav">
@@ -83,7 +84,7 @@
                 </aside>
             </div>
         </section>
-        <section>
+        <section class="wrapper commentsForm">
             <h4 class="comments">Comments:</h4>
 
             <div class="commentGridContainer">
@@ -109,17 +110,20 @@
                 </div>
             </div>
 
-            <form action="">
-                <input type="text">
-                <input type="email">
-                <input type="textbox">
-                <button type="submit">post a comment</button>
+            <form class="form" action="">
+                <input type="text" class="nameEmail" name="name" placeholder="Name">
+                <input type="email" class="nameEmail" name="email" placeholder="Email">
+                <textarea type="textarea" class="commentBox" name="Comment" cols="80" rows="8"
+                    placeholder="Comment"></textarea><br />
+                <button class="commentBtn">post comment</button>
             </form>
         </section>
     </main>
 
     <footer>
-        Copyright 2019 Juno College
+        <div>
+            Copyright <i class="far fa-copyright"></i> 2019 Juno College
+        </div>
     </footer>
 </body>
 
