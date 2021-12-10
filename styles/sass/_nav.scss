@@ -1,0 +1,65 @@
+.headerNav{
+    display: flex;
+    font-family: lato;
+    font-size: 1.5rem;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+.headerNav li{
+    padding: 10px;
+    border-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+a:visited 
+{
+    color: $slateblue;
+}
+
+#logo{
+    font-family: $headingText;
+    text-decoration: none;
+    color: $blackTwo;
+}
+
+
+.navHover:hover{
+    border-bottom: 1px solid $turquoise ;
+}
+
+
+#logoDiv {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-family: $headingText;
+    font-size: 32px;
+    padding-left: 75px;
+}
+
+#logoDivBlog{
+    position: relative;
+    font-family: $headingText;
+    font-size: 32px;
+    left: 6%;
+    top: 65px; 
+}
+
+
+.logoDivContact{
+    position: relative;
+    top: 79px;
+    left: 8%;
+     font-family: lato;
+    font-size: 1.875rem;
+    line-height: 24px;
+    list-style-type: none;
+}
+
+
+

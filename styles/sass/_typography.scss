@@ -1,0 +1,83 @@
+h1{
+  display: block;
+  font-family: 'Pacifico', cursive;
+  font-weight: normal;
+  font-size: 3.625rem;
+  line-height: 68px;
+}
+
+h2{
+    font-family: $headingText;
+    font-weight: normal;
+    font-size: 2.69rem;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+    color: $slateblue;
+}
+
+
+h3{
+    font-family: $headingText;
+    font-weight: normal;
+    font-size: 2.69rem;
+    color: $slateblue;
+    line-height: 58px;
+    letter-spacing: 2.7px;
+    }
+
+h4{
+    font-family: $headingText;
+    font-weight: normal;
+    font-size: 2.5rem;
+    color: $white;
+    line-height: 58px;
+    letter-spacing: 2.5px;
+    }
+
+
+h5{
+    font-family: $headingText;
+    font-weight: normal;
+    font-size: 2.69rem;
+    letter-spacing: 2.5;
+    line-height: 58px;
+    color: $slateblue
+}
+
+p{
+    color: $blackTwo ;
+    font-family: $NavBaseText;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+ul{
+    font-family: $NavBaseText;
+    font-size: 1rem;
+    line-height: 28px;
+    letter-spacing: 2px;
+}
+
+.comments{
+    color: $black;
+}
+
+.DiscoverNewSec p {
+    color: $white;
+}
+
+footer p{
+    color: $white;
+     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+

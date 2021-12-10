@@ -1,0 +1,57 @@
+.readMoreBtn{
+    background-color:$skyBlue;
+	display:inline-block;
+	color: $slateblue;
+	font-family:$headingText;
+	font-size:1.68rem;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+	padding:10px 22px;
+    border-style: none;
+}
+
+.readMoreBtn:hover{
+    background-color: $turquoise;
+}
+
+.byStyleBtn{
+    background-color:$slateblue;
+	color: $white;
+	font-family:$headingText;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+	font-size:1.68rem;
+	padding:10px 22px;
+    border-style: none;
+}
+
+.byStyleBtn:hover{
+    background-color:$turquoise;
+}
+
+.commentBtn{
+    background-color:$slateblue;
+	display:inline-block;
+	color: $white;
+	font-family:$headingText;
+	font-size:1.68rem;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+	padding:10px 22px;
+    border-style: none;
+    width: 96%;
+    margin-top: 20px;
+}
+
+.submitBtn{
+    background-color: $skyBlue;
+	color: $slateblue;
+	font-family:$headingText;
+	font-size:1.68rem;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+	padding:10px 22px;
+    border-style: none;
+    width: 94%;
+    margin-top: 30px ;
+}
