@@ -10,7 +10,8 @@
     border-style: none;
 }
 
-.readMoreBtn:hover{
+.readMoreBtn:hover
+.readMoreBtn:focus{
     background-color: $turquoise;
 }
 
@@ -25,7 +26,8 @@
     border-style: none;
 }
 
-.byStyleBtn:hover{
+.byStyleBtn:hover
+.byStyleBtn:focus{
     background-color:$turquoise;
 }
 
@@ -54,4 +56,21 @@
     border-style: none;
     width: 94%;
     margin-top: 30px ;
+}
+
+.findOutMore {
+	background-color:$slateblue;
+	display:inline-block;
+	color: $white;
+	font-family:$headingText;
+	font-size:1.68rem;
+    line-height: 32px;
+    letter-spacing: 1.4px;
+	padding:6px 25px;
+    border-style: none;
+}
+   
+.findOutMore:hover,
+.findOutMore:focus{
+	background-color: $turquoise;
 }

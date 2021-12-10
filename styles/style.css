@@ -257,6 +257,12 @@ html {
           box-sizing: inherit;
 }
 
+#nav {
+  position: relative;
+  left: 54%;
+  padding-top: 1px;
+}
+
 .headerNav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -401,7 +407,7 @@ footer p {
   border-style: none;
 }
 
-.readMoreBtn:hover {
+.readMoreBtn:hover .readMoreBtn:focus {
   background-color: #0cadc0;
 }
 
@@ -416,7 +422,7 @@ footer p {
   border-style: none;
 }
 
-.byStyleBtn:hover {
+.byStyleBtn:hover .byStyleBtn:focus {
   background-color: #0cadc0;
 }
 
@@ -447,22 +453,21 @@ footer p {
   margin-top: 30px;
 }
 
-.hamburgerMenu {
-  height: 150px;
-  width: 15%;
-  color: #ffffff;
+.findOutMore {
   background-color: #1a315c;
-  position: relative;
-  float: right;
+  display: inline-block;
+  color: #ffffff;
+  font-family: "Pacifico", cursive;
+  font-size: 1.68rem;
+  line-height: 32px;
+  letter-spacing: 1.4px;
+  padding: 6px 25px;
+  border-style: none;
 }
-.hamburgerMenu nav {
-  padding-top: 10px;
-}
-.hamburgerMenu ul {
-  list-style-type: none;
-}
-.hamburgerMenu a {
-  color: white;
+
+.findOutMore:hover,
+.findOutMore:focus {
+  background-color: #0cadc0;
 }
 
 .photoShadowSquare {
@@ -489,22 +494,6 @@ img {
   font-size: 1rem;
 }
 
-.findOutMore {
-  background-color: #1a315c;
-  display: inline-block;
-  color: #ffffff;
-  font-family: "Pacifico", cursive;
-  font-size: 1.68rem;
-  line-height: 32px;
-  letter-spacing: 1.4px;
-  padding: 6px 25px;
-  border-style: none;
-}
-
-.findOutMore:hover {
-  background-color: #0cadc0;
-}
-
 /*====================================================================================== HEADER */
 .fa-bars, .fa {
   float: right;
@@ -513,11 +502,6 @@ img {
   top: 50px;
   visibility: hidden;
   font-size: 2.5rem;
-}
-
-#nav {
-  position: relative;
-  left: 54%;
 }
 
 #textiles {
@@ -827,7 +811,7 @@ footer {
     line-height: 20px;
     left: 0px;
     padding-left: 20px;
-    top: 18px;
+    top: -50px;
   }
 
   #logoDiv {
@@ -1120,6 +1104,7 @@ body {
 
   .missionPhoto {
     height: 550px;
+    padding-left: 46px;
   }
 
   .missionCont {
@@ -1261,12 +1246,12 @@ body {
   }
 
   .nameEmailContact {
-    width: 196px;
+    width: 44%;
   }
 }
 @media (max-width: 768px) {
   .nameEmailContact {
-    width: 157px;
+    width: 43%;
   }
 }
 @media (max-width: 480px) {
@@ -1290,6 +1275,6 @@ body {
   }
 
   .nameEmailContact {
-    width: 171px;
+    width: 43%;
   }
 }

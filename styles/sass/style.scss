@@ -6,17 +6,16 @@ $turquoise: #0cadc0;
 $skyBlue: #ccedfb;
 $blackTwo: #161515;
 $white: #ffffff;
-// $baseFont: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 
+//=================================================================================== imports
 @import 'normalize';
 @import 'borbox';
 @import 'nav';
 @import 'typography';
-@import 'mediaquery';
+@import 'buttons';
 
-
-// GENERAL
+//===================================================================================== GENERAL
 
 .photoShadowSquare {
 box-shadow: -9px 8px 0px 1px #0CADC0;
@@ -27,8 +26,6 @@ box-shadow: -9px 8px 0px 1px #0CADC0;
 .squarePhoto{
     position: relative;
 }
-
-
 
 .wrapper{
   width: 100%;
@@ -46,101 +43,19 @@ img {
     font-size:  1rem;
 }
 
-
-//================================================================================= BUTTON
-.findOutMore {
-	background-color:$slateblue;
-	display:inline-block;
-	color: $white;
-	font-family:$headingText;
-	font-size:1.68rem;
-    line-height: 32px;
-    letter-spacing: 1.4px;
-	padding:6px 25px;
-    border-style: none;
-}
-   
-.findOutMore:hover {
-	background-color: $turquoise;
-}
-
-.readMoreBtn{
-    background-color:$skyBlue;
-	display:inline-block;
-	color: $slateblue;
-	font-family:$headingText;
-	font-size:1.68rem;
-    line-height: 32px;
-    letter-spacing: 1.4px;
-	padding:10px 22px;
-    border-style: none;
-}
-
-.readMoreBtn:hover{
-    background-color: $turquoise;
-}
-
-.byStyleBtn{
-    background-color:$slateblue;
-	color: $white;
-	font-family:$headingText;
-    line-height: 32px;
-    letter-spacing: 1.4px;
-	font-size:1.68rem;
-	padding:10px 22px;
-    border-style: none;
-}
-
-.byStyleBtn:hover{
-    background-color:$turquoise;
-}
-
-.commentBtn{
-    background-color:$slateblue;
-	display:inline-block;
-	color: $white;
-	font-family:$headingText;
-	font-size:1.68rem;
-    line-height: 32px;
-    letter-spacing: 1.4px;
-	padding:10px 22px;
-    border-style: none;
-    width: 90%;
-    margin-top: 20px;
-}
-
-.submitBtn{
-    background-color: $skyBlue;
-	color: $slateblue;
-	font-family:$headingText;
-	font-size:1.68rem;
-    line-height: 32px;
-    letter-spacing: 1.4px;
-	padding:10px 22px;
-    border-style: none;
-    width: 94%;
-    margin-top: 30px ;
-}
-
-
-
-
 /*====================================================================================== HEADER */
 
 
 .fa-bars, .fa{
     float: right;
-    position: relative;
+    position: sticky;
     right: 5%;
     top: 50px;
     visibility: hidden;
     font-size: 2.5rem;
 }
 
-#nav {
-    position: relative;
-    left: 54%;
-}
+
 
 #textiles {
     position:relative;
@@ -162,7 +77,7 @@ img {
   top: 270px;
 }
 
-//====================================================================================== LEAN NEW TECHNIQUES  
+//====================================================HOME================================== LEAN NEW TECHNIQUES  
 
 .newTechColor{
     background-color: $skyBlue;
@@ -184,7 +99,7 @@ img {
     padding-right: 100px;
 }
 
-//========================================================================================================= GALLERY
+//==============================================================HOME=========================================== GALLERY
 
 .galleryBackColor{
     background-color: $slateblue;
@@ -206,7 +121,7 @@ img {
     padding: 0px 20px 0px 20px;
 }
 
-// ===============================================================================UPCOMING - COMMUNITY - BLOG = GET IN TOUCH
+// ===========================================HOME==================================== UPCOMING - COMMUNITY - BLOG = GET IN TOUCH
 
 .gridBackGround{
     background-color: $skyBlue;
@@ -226,7 +141,7 @@ img {
     margin: 0px 0px 16px 0px;
 }
 
-// ==========================================================================================DISCOVER - NEW LOCATION
+// ==============================================HOME============================================ DISCOVER - NEW LOCATION
 .DiscoverNewSec{
     background-color: $slateblue;
     height: 600px;
@@ -265,8 +180,6 @@ img {
     top: 30px;
 }
 
-
-
 .secImgShadowRight{
     -webkit-box-shadow: 18px 18px 0px 0px #0cadc0; 
     box-shadow: 18px 18px 0px 0px #0cadc0;
@@ -277,7 +190,7 @@ img {
     box-shadow: -18px 18px 0px 0px #0CADC0;
 }
 
-// =======================================================================================================BANNER
+// ==================================================HOME=====================================================BANNER
 .banner{
     background-image: url(./assets/banner.jpg);
     background-repeat: no-repeat;
@@ -286,7 +199,7 @@ img {
 }
 
 
-//===================================================================================================== Search By Style
+//=======================================================HOME============================================== Search By Style
 .byStyle{
     background-color: $skyBlue;
     height: 500px;
@@ -306,8 +219,7 @@ font-weight: normal;
     margin-top: 20px;
 }
 
-
-//============================================================================================================= Footer
+//========================================================HOME===================================================== Footer
 footer{
     background-color: $black;
     color: $white;
@@ -318,9 +230,8 @@ footer{
     padding-top: 10px;
 }
 
-
 @media (max-width: 940px) {
-// ===================================================================================================== media 940px
+// ====================================================================================HOME================= media 940px
     #nav{
         left: 45%;
     }
@@ -349,7 +260,7 @@ padding: 125px 50px;
     grid-template-rows: 260px;
 }
 
-    .DiscoverNewSec{
+.DiscoverNewSec{
     height: 900px;
     }
 
@@ -360,7 +271,7 @@ top: 170px;
 
 }
 
-/*========================================================================= media 768px Landscape phone to portrait tablet */
+/*=================================================HOME======================== media 768px Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
 #nav{
@@ -443,30 +354,16 @@ p{
 .byStyleMain{
     padding: 55px 120px 0px 120px;
 }
-
-
-
 }
-/*====================================================================================================== media 480px Landscape phones and down */
+/*===============================================================HOME=======================================  media 480px Landscape phones and down */
 @media (max-width: 480px) {
 
-h1{
-    font-size: 1.5rem;
-    line-height: 20px;
-}
-
-h2{
-    font-size: 1.69rem;
-    line-height: 35px;
-    letter-spacing: 0.7px;
-}
-
-
-
-#textiles{
+#textiles{   
+    font-size: 1rem;
+    line-height: 20px; 
     left: 0px;
     padding-left: 20px;
-    top: 18px;
+    top: -50px;
 }
 
 #logoDiv{
@@ -560,15 +457,13 @@ padding-left: 0px;
     padding-left: 83px;
 }
 
-
-
-// ============================================================================================ NEW COLLECTION 
+// ============================================================================================ BLOG NEW COLLECTION 
 .collection{
     width: 58%;
     background-color: $slateblue;
     -webkit-box-shadow: 6px 6px 0px 6px $turquoise;
     box-shadow: 6px 6px 0px 6px $turquoise;
-    height: 1600px;
+    height: 1455px;
     position: relative;
     bottom: 100px;
 }
@@ -598,7 +493,7 @@ padding-left: 0px;
     padding-bottom: 20px;
 }
 
-  //=====================================================================================MISSION  
+  //=====================================================================================BLOG MISSION  
   body{
     background-color: $skyBlue
   }
@@ -614,14 +509,13 @@ padding-left: 0px;
     
 }
 
-
 .missionCont{
     padding: 10px 30px 10px 30px;
 }
 
 .missionPhoto{
     height: 390px;
-    padding-left: 50px;
+    padding-left: 28px;
 }
 
 .mission h3{
@@ -641,7 +535,7 @@ padding-left: 0px;
     display: flex;
 }
 
-// ======================================================================================================COMMENTS 
+// ======================================================================================================BLOG COMMENTS 
 
 .commentsForm{
     height: 1000px;
@@ -665,14 +559,17 @@ padding-left: 0px;
     font-weight: bold;
 }
 
-// ============================================================================================FORM
+// ============================================================================================BLOG FORM
 
 .form{
-    width: 59%;
+    width: 52%;
     position: relative;
     left: 6%;
+    top: 80px;
+    ::placeholder{
+        color: black ;
+    }
 }
-
 
 .nameEmail{
     border: none;
@@ -681,8 +578,7 @@ padding-left: 0px;
     padding-left: 35px;
     padding-bottom: 12px;
     margin-right: 20px;
-    width: 305px;
-
+    width: 46%;
 }
 .commentBox{
     background-color: transparent;
@@ -691,13 +587,11 @@ padding-left: 0px;
     margin-top: 20px;
     padding-left: 21px;
     padding-top: 28px;
-    ::placeholder{
-        color: $black;
-    }
+    
 }
 
 @media (max-width: 940px) {
-//========================================================================================= media 940px
+//================================================BLOG=========================================BLOG media 940px
 #nav{
     left: 36%;
 }
@@ -718,9 +612,7 @@ p{
 .commentsForm {
     height: 1060px;
 }
-.nameEmail{
-    width: 305px;
-}
+
 .commentBtn{
     width: 96%;
 }
@@ -728,9 +620,9 @@ p{
 
 
 @media (max-width: 768px) {
-// =================================================================================================== media 768px
-h1 {
-    font-size: 3rem;
+// ===================================================BLOG================================================BLOG media 768px
+.blogHeader {
+    font-size: 1rem;
 }
 
 .blogFlex{
@@ -756,6 +648,7 @@ h1 {
 
 .missionPhoto {
     height: 550px;
+    padding-left: 46px;
 }
 
 .missionCont {
@@ -765,14 +658,14 @@ h1 {
 
 .form {
     width: 89%;
-
 }
 }
 @media (max-width: 480px) {
-
+// ===================================================================BLOG =========================BLOG 480px
 .collection{
-    height: 1390px;
+        height: 1468px;
 }
+
 
 .mission{
     left: 60px;
@@ -780,6 +673,11 @@ h1 {
 
 .missionPhoto {
     padding-left: 0px;
+    height: 408px;
+}
+
+.missionCont{
+padding: 55px 20px 0px 20px;
 }
 
 
@@ -796,11 +694,10 @@ grid-template-rows: 300px;
     width: 96%;
 }
 
-.nameEmail {
-    width: 184px;
+.nameEmail{
+    width: 44%;
 }
 }
-
 
 //=============================================================================================== NEW PAGE CONTACT FORM 
 
@@ -823,7 +720,7 @@ grid-template-rows: 300px;
     padding-left: 35px;
     padding-bottom: 12px;
     margin-right: 20px;
-    width: 264px;
+    width: 46%;
     color: $white;
 }
 
@@ -849,7 +746,7 @@ grid-template-rows: 300px;
 }
 
 .contactForm{
-padding-top: 80px;
+padding-top: 52px;
 padding-left: 25px;
    
 }
@@ -879,7 +776,7 @@ padding-left: 25px;
 
 
 @media (max-width: 940px) {
-
+// =============================================================CONTACT FORM CONTACT 940PX ==============================
 .contactHeader{
     height: 580px;
 }
@@ -903,22 +800,20 @@ padding-left: 25px;
     left: 8%;
 }
 
-}
-
 .nameEmailContact{
-    width: 196px;
+    width: 44%;
+}
 }
 
 @media (max-width: 768px) {
-
+// ============================================================CONTACT FORM 768PX =================================================
 .nameEmailContact{
-    width: 157px;
+    width: 43%;
 }
 }
-
 
 @media (max-width: 480px) {
-
+// =============================================================== CONTACT FORM 480PX ==================================================
     #infoContact {
     right: 8%;
     left: 15%;
@@ -939,7 +834,6 @@ padding-left: 25px;
 }
 
 .nameEmailContact {
-    width: 171px;
+    width: 43%;
 }
-
 }
