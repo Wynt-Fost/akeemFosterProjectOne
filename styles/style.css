@@ -505,6 +505,8 @@ footer p {
   left: 88%;
   padding: 20px 20px 0px 0px;
   position: fixed;
+  visibility: hidden;
+  z-index: 1;
 }
 
 .bar {
@@ -938,7 +940,7 @@ footer {
     padding: 0px;
   }
 }
-#blogHeader {
+.blogHeader {
   background-image: url(./assets/blog-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -1119,6 +1121,10 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .burger {
+    visibility: visible;
+  }
+
   .blogHeader {
     font-size: 1rem;
   }
@@ -1166,6 +1172,10 @@ body {
     height: 1468px;
   }
 
+  .burger {
+    visibility: visible;
+  }
+
   .mission {
     left: 60px;
   }
@@ -1200,7 +1210,6 @@ body {
   background-image: url(./assets/contact-header.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;
   height: 690px;
 }
 
@@ -1295,11 +1304,19 @@ body {
   }
 }
 @media (max-width: 768px) {
+  .burger {
+    visibility: visible;
+  }
+
   .nameEmailContact {
     width: 43%;
   }
 }
 @media (max-width: 480px) {
+  .burger {
+    visibility: visible;
+  }
+
   #infoContact {
     right: 8%;
     left: 15%;

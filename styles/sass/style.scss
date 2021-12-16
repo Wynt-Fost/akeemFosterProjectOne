@@ -445,7 +445,7 @@ padding-left: 0px;
 
 //========================================================================================= NEW PAGE TEXTILEE BLOG ==============
 
-#blogHeader{
+.blogHeader{
     background-image: url(./assets/blog-header.jpg);
     background-repeat: no-repeat;
     background-size:cover;
@@ -622,6 +622,10 @@ p{
 
 @media (max-width: 768px) {
 // ===================================================BLOG================================================BLOG media 768px
+.burger{
+    visibility: visible;
+}
+
 .blogHeader {
     font-size: 1rem;
 }
@@ -667,6 +671,10 @@ p{
         height: 1468px;
 }
 
+.burger{
+    visibility: visible;
+}
+
 
 .mission{
     left: 60px;
@@ -706,7 +714,6 @@ grid-template-rows: 300px;
     background-image: url(./assets/contact-header.jpg) ;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
     height: 690px;
 }
 
@@ -808,6 +815,11 @@ padding-left: 25px;
 
 @media (max-width: 768px) {
 // ============================================================CONTACT FORM 768PX =================================================
+
+.burger{
+    visibility: visible;
+}
+
 .nameEmailContact{
     width: 43%;
 }
@@ -815,6 +827,11 @@ padding-left: 25px;
 
 @media (max-width: 480px) {
 // =============================================================== CONTACT FORM 480PX ==================================================
+
+.burger{
+    visibility: visible;
+}
+
     #infoContact {
     right: 8%;
     left: 15%;

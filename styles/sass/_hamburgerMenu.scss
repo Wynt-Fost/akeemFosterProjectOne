@@ -33,12 +33,13 @@
 
 
 .burger{
-    // display: none;
     cursor: pointer;
     position: relative;
     left: 88%;
     padding: 20px 20px 0px 0px;
     position: fixed;
+    visibility: hidden;
+    z-index: 1;
 }
 
 .bar{
@@ -46,8 +47,6 @@
    width: 25px;
    height: 3px;
    margin: 5px auto;
-//    -webkit-transition: all 0.3s ease-in;
-//    transition: all 0.3s ease-in;
    background-color: $black;
 }
 
