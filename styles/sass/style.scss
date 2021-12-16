@@ -57,9 +57,8 @@ img {
 }
 
 
-
 #textiles {
-    position:relative;
+    position:absolute;
     left: 15px;
     padding-left: 75px;
 }
@@ -69,7 +68,6 @@ img {
   background-size: contain;
   position: relative;
   height: 567px;
-  background-position: center;
 }
 
 .headerPhoto{
@@ -238,6 +236,7 @@ footer{
         left: 45%;
     }
 
+
 .headerPhoto{
     height: 400px;
     width: 587px;
@@ -296,6 +295,7 @@ top: 170px;
 h1{
     font-size: 2rem;
 }
+
 p{
     font-size: 0.8rem;
 }
@@ -365,7 +365,7 @@ p{
     line-height: 20px; 
     left: 0px;
     padding-left: 20px;
-    top: -50px;
+    top: 28px;
 }
 
 #logoDiv{
